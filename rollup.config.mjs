@@ -5,7 +5,6 @@ import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import json from '@rollup/plugin-json';
 import dts from 'rollup-plugin-dts';
-import scss from 'rollup-plugin-scss';
 
 export const rollupConfig = {
   input: {
@@ -34,26 +33,23 @@ const rollupPlugins = (exts) => [
   json(),
 ];
 
-const moduleSuffixes = {
-  '.server': ['.server', '.web', ''],
-  '': ['.web', ''],
-};
+const exts = ['.web', ''];
 
 export default [
-  ..._.map(moduleSuffixes, (exts, suffix) => ({
+  {
     ...rollupConfig,
     output: [
       {
-        entryFileNames: `[name]${suffix}.js`,
-        chunkFileNames: `internals/[name]-[hash]${suffix}.js`,
+        entryFileNames: '[name].js',
+        chunkFileNames: 'internals/[name]-[hash].js',
         dir: './dist',
         format: 'cjs',
         sourcemap: true,
         exports: 'named',
       },
       {
-        entryFileNames: `[name]${suffix}.mjs`,
-        chunkFileNames: `internals/[name]-[hash]${suffix}.mjs`,
+        entryFileNames: '[name].mjs',
+        chunkFileNames: 'internals/[name]-[hash].mjs',
         dir: './dist',
         format: 'es',
         sourcemap: true,
@@ -66,10 +62,9 @@ export default [
           ...exts.flatMap(x => [`${x}.ts`, `${x}.mjs`, `${x}.js`]),
         ]
       }),
-      suffix === '' && scss({ fileName: 'index.web.css' }),
       ...rollupPlugins(exts),
     ]),
-  })),
+  },
   {
     ...rollupConfig,
     output: [
