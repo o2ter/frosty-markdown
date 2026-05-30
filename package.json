@@ -1,0 +1,47 @@
+{
+  "name": "@o2ter/frosty-markdown",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "module": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist/*"
+  ],
+  "repository": "https://github.com/o2ter/frosty-markdown.git",
+  "author": "Susan Cheng <susan.doggie@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "rollup": "yarn clean && rollup -c",
+    "start": "npx frosty run -d -w -s ./src tests/server/app.tsx"
+  },
+  "dependencies": {
+    "frosty": "^0.0.155",
+    "hast-util-to-jsx-runtime": "^2.3.6",
+    "html-url-attributes": "^3.0.1",
+    "lodash": "^4.17.21",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.1.0",
+    "vfile": "^6.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/lodash": "^4.17.16",
+    "rollup": "^4.22.4",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-scss": "^4.0.1",
+    "sass": "^1.90.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.2"
+  }
+}
