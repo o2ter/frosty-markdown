@@ -944,6 +944,18 @@
   resolved "https://registry.yarnpkg.com/@exodus/bytes/-/bytes-1.15.1.tgz#b13bc464ca162c17abf0837fb3a11aeab79e45d1"
   integrity sha512-S6mL0yNB/Abt9Ei4tq8gDhcczc4S3+vQ4ra7vxnAf+YHC02srtqxKKZghx2Dq6p0e66THKwR6r8N6P95wEty7Q==
 
+"@formatjs/fast-memoize@3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@formatjs/fast-memoize/-/fast-memoize-3.1.6.tgz#fca16a7d60f89df48f506f130f58223d7d81c2a2"
+  integrity sha512-H5aexk1Le7T9TPmscacZ+1pR6CTa2n1wq+HDVGXhH8TzUlQQpeXzZs91dRtmFHrbeNbjPFPfQujUqm7MHgVoXQ==
+
+"@formatjs/intl-localematcher@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-localematcher/-/intl-localematcher-0.8.10.tgz#e9bd512178122dd7c7a92d2f145daed7ce598147"
+  integrity sha512-P/IC3qws3jH+1fEs+o0RIFgXKRaQlFehjS5W0FPAqdo6hgzawLl+eD0q0JjheQ3XtoOe5n8WSYfX06KQZI/QJA==
+  dependencies:
+    "@formatjs/fast-memoize" "3.1.6"
+
 "@jridgewell/gen-mapping@^0.3.12", "@jridgewell/gen-mapping@^0.3.5":
   version "0.3.13"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz#6342a19f44347518c93e43b1ac69deb3c4656a1f"
@@ -1593,11 +1605,12 @@ extend@^3.0.0:
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
 
-frosty@^0.0.155:
-  version "0.0.155"
-  resolved "https://registry.yarnpkg.com/frosty/-/frosty-0.0.155.tgz#fc2c884c3dc06c4f69587cbf1b1f7ee9051efcf4"
-  integrity sha512-wroXAMLocBJaB7C5w6aFRWhJh+7q5CxAZI6HWpEsaxuQRRdGPej9x1TlAbDrSxxQj5pRzzUiPLODRHQ173mVBg==
+frosty@^0.0.156:
+  version "0.0.156"
+  resolved "https://registry.yarnpkg.com/frosty/-/frosty-0.0.156.tgz#d0ceb4f979155835b6a163601f30ff1bc8afd738"
+  integrity sha512-Of2sSqXcz41fGHfTPiJoEqpEKVdqqkrqHtRWN/CBqGeEF3IyZ0bj08q4HmKWzfl5aVtJwj50YObAaT3GgwTfTQ==
   dependencies:
+    "@formatjs/intl-localematcher" "^0.8.10"
     "@o2ter/utils-js" "^0.0.19"
     "@types/jsdom" "^21.1.7"
     "@types/lodash" "^4.17.16"
