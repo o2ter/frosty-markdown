@@ -16,7 +16,7 @@
     "start": "npx frosty run -d -w -s ./src tests/server/app.tsx"
   },
   "dependencies": {
-    "frosty": "^0.0.156",
+    "frosty": "^0.0.157",
     "hast-util-to-jsx-runtime": "^2.3.6",
     "html-url-attributes": "^3.0.1",
     "lodash": "^4.17.21",
