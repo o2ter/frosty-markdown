@@ -1593,10 +1593,10 @@ extend@^3.0.0:
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
   integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
 
-frosty@^0.0.159:
-  version "0.0.159"
-  resolved "https://registry.yarnpkg.com/frosty/-/frosty-0.0.159.tgz#1bcb792011f93cbc23a1c538cef601fa308449b7"
-  integrity sha512-Jzml90+B6rY2f5o53uhK7syH7+wOG9QA3lBO6KycPuYeSWYVd/C6D5+EUaLmruKQl6RvnmBtWRfl4z8ZOikK7g==
+frosty@^0.0.160:
+  version "0.0.160"
+  resolved "https://registry.yarnpkg.com/frosty/-/frosty-0.0.160.tgz#7a74f0fb0af5ac51e7e48a9631e19fa1e81a3388"
+  integrity sha512-NMD5tFUqc/Q4K4kc7VIZ1BdbL34qEp/ujJs37TKRFp2/pUDNL37aVON6uFNBC4LEEVo51k5ggl4W3x+zUb0oKQ==
   dependencies:
     "@formatjs/intl-localematcher" "^0.8.12"
     "@o2ter/utils-js" "^0.0.19"
